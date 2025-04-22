@@ -63,6 +63,7 @@ impl From<std::io::Error> for RESPError {
 
 type RedisResult = Result<Option<(usize, RESPTypes)>, RESPError>;
 
+// make the code clean
 #[tokio::main]
 async fn main() -> io::Result<()> {
     //parsing arguments
